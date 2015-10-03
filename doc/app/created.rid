@@ -1,0 +1,7 @@
+Sat, 03 Oct 2015 02:10:03 -0700
+README.rdoc	Thu, 01 Oct 2015 20:00:16 -0700
+app/controllers/application_controller.rb	Thu, 01 Oct 2015 20:00:16 -0700
+app/controllers/books_controller.rb	Fri, 02 Oct 2015 22:49:05 -0700
+app/helpers/application_helper.rb	Thu, 01 Oct 2015 20:00:16 -0700
+app/helpers/books_helper.rb	Fri, 02 Oct 2015 22:49:05 -0700
+app/models/book.rb	Fri, 02 Oct 2015 22:49:05 -0700
