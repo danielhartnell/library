@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="header">
+    <h1>Daniel's Books</h1>
+  </div>
+  <p class="lead">Be an adult. Read some shit.</p>
+  <%= link_to 'New Book', new_book_path, :class => "btn btn-primary" %>
+  <br/><br/>
+  <div class="row">
+    <% @books.each do |book| %>
+      <div class="col-md-2 col">
+        <img src="<%= book.photo_url %>" alt="<%= book.title %>" class="img-thumbnail"><br/>
+        <%= link_to 'Show', book, :class => "book-menu" %>
+        <%= link_to 'Edit', edit_book_path(book), :class => "book-menu" %>
+        <%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' }, :class => "book-menu" %>
+      </div>
+    <% end %>
+  </div>
+</div>

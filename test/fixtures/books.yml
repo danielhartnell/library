@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  isbn: MyString
+  photo_url: MyString
+  title: MyString
+  author: MyString
+  description: MyText
+  location: MyString
+  checkout: false
+  nerd: MyString
+
+two:
+  isbn: MyString
+  photo_url: MyString
+  title: MyString
+  author: MyString
+  description: MyText
+  location: MyString
+  checkout: false
+  nerd: MyString
