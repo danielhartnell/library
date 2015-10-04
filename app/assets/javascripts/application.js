@@ -16,9 +16,20 @@
 //= require turbolinks
 //= require_tree .
 
-$(function() {
+// jQuery to load on page changes
+$(window).on('page:change', function(){
+  // Make sure option div is hidden
   $('.book-menu').hide();
+  // Show div on hover
   $('.col-md-2').hover(function() {
     $('.book-menu', this).toggle();
+  });
+
+  // Add opacity on hover for images on index
+  $('.col-md-2 img').hover(function() {
+    $(this).stop().fadeTo(250, 0.5);
+  },
+  function(){
+    $(this).stop().fadeTo(250, 1);
   });
 });

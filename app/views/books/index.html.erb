@@ -1,18 +1,18 @@
 <div class="container">
   <div class="header">
-    <h1>Daniel's Books</h1>
+    <h1>Library Books</h1>
   </div>
   <p class="lead">Be an adult. Read some shit.</p>
   <%= link_to 'New Book', new_book_path, :class => "btn btn-primary" %>
   <br/><br/>
   <div class="row">
-    <% @books.each do |book| %>
+    <% @books.sort_by{|book| book.title}.each do |book| %>
       <div class="col-md-2">
-        <img src="<%= book.photo_url %>" class="img-responsive thumbnail"></a>
+          <%= link_to image_tag(book.photo_url, :class => "img-responsive thumbnail"), book %>
         <div class="row-buffer">
-          <%= link_to 'About', book, :class => "book-menu" %>
-          <%= link_to 'Edit', edit_book_path(book), :class => "book-menu" %>
-          <%= link_to 'Delete', book, method: :delete, data: { confirm: 'Are you sure?' }, :class => "book-menu" %>
+          <!-- <%= link_to 'About', book, :class => "book-menu btn btn-primary btn-xs" %> -->
+          <%= link_to 'Edit', edit_book_path(book), :class => "book-menu btn btn-warning btn-xs" %>
+          <%= link_to 'Delete', book, method: :delete, data: { confirm: 'Are you sure?' }, :class => "book-menu btn btn-danger btn-xs" %>
         </div>
       </div>
     <% end %>
