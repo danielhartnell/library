@@ -3,12 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .row-buffer {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	display: block;
-	height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  height: 40px;
 }
 
-.form-horizontal .control-label{
+.form-horizontal .control-label {
    text-align:left !important; 
+}
+
+.thumbnail {
+	height: 150px !important;
 }
