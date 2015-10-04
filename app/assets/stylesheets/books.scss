@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.bottom-buffer {
-	margin-bottom: 10px;
+.row-buffer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	height: 40px;
+}
+
+.form-horizontal .control-label{
+   text-align:left !important; 
 }

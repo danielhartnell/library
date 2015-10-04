@@ -17,8 +17,8 @@
 //= require_tree .
 
 $(function() {
-	$('.book-menu').hide();
-	$('.col-md-2').hover(function() {
-		$('.book-menu', this).toggle();
-	});
+  $('.book-menu').hide();
+  $('.col-md-2').hover(function() {
+    $('.book-menu', this).toggle();
+  });
 });

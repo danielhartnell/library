@@ -1,8 +1,6 @@
 <div class="container">
-	<h1>Editing Book</h1>
-
-	<%= render 'form' %>
-
-	<%= link_to 'Show', @book %> |
-	<%= link_to 'Back', books_path %>
+  <h1>Editing Book</h1>
+  <%= link_to 'Show', @book, :class => 'btn btn-primary' %>
+  <%= link_to 'Back', books_path, :class => 'btn btn-primary' %><br/><br/>
+  <%= render 'form' %>
 </div>
