@@ -5,16 +5,28 @@
   <p class="lead">Be an adult. Read some shit.</p>
   <%= link_to 'New Book', new_book_path, :class => "btn btn-primary" %>
   <br/><br/>
+  <div class="form-group">
+    <%= form_tag(books_path, :method => "get", id: "search-form", :html => {:class => 'form-horizontal'}) do %>
+      <div class="col-xs-2 search-box">
+        <%= text_field_tag :search, params[:search], placeholder: "Search Books", :class => "form-control text-left" %>
+      </div>
+      <%= submit_tag "Search", :class => "btn btn-success" %><br/><br/>
+    <% end %>
+  </div>
   <div class="row">
-    <% @books.sort_by{|book| book.title}.each do |book| %>
+    <% if @books.present? %>
+      <% @books.sort_by{|book| book.title}.each do |book| %>
       <div class="col-md-2">
-          <%= link_to image_tag(book.photo_url, :class => "img-responsive thumbnail"), book %>
+        <%= link_to image_tag(book.photo_url, :class => "img-responsive thumbnail"), book %>
         <div class="row-buffer">
           <!-- <%= link_to 'About', book, :class => "book-menu btn btn-primary btn-xs" %> -->
           <%= link_to 'Edit', edit_book_path(book), :class => "book-menu btn btn-warning btn-xs" %>
           <%= link_to 'Delete', book, method: :delete, data: { confirm: 'Are you sure?' }, :class => "book-menu btn btn-danger btn-xs" %>
         </div>
       </div>
+      <% end %>
+    <% else %>
+      <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
     <% end %>
   </div>
 </div>
