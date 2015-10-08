@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  database: library-dev
+  host: <%= ENV['DB_HOST'] %>
+  port: 5432
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
+
+test:
+  adapter: postgresql
+  database: library-test
+  host: <%= ENV['DB_HOST'] %>
+  port: 5432
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
+
+production:
+  adapter: postgresql
+  database: <%= ENV['DB_DATABASE'] %>
+  host: <%= ENV['DB_HOST'] %>
+  post: 5432
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASS'] %>
