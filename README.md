@@ -26,4 +26,5 @@ This should get you up and running! The following screenshot includes sample dat
 - I would like to simplify the process of getting this running locally. This may include the use of Docker.
 - The code just looks kind of messy for the books view. I want to change that but I'm not sure how yet. 
 - I may transition from jQuery to pure Javascript to eliminate an unnecessary layer of abstraction. 
-- Currently opacity on hover is done with jQuery. My buddy Seth has recommended pure CSS for faster results. 
+- Currently opacity on hover is done with jQuery. My buddy Seth has recommended pure CSS for faster results.
+- Can I show if the app is currently running under Heroku?
