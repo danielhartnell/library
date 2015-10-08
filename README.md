@@ -1,6 +1,6 @@
 # Library
 
-![Travis CI Build Status](https://travis-ci.org/danielhartnell/library.svg?branch=master)
+[![Build Status](https://travis-ci.org/danielhartnell/library.svg)](https://travis-ci.org/danielhartnell/library)
 
 ### Installation
 
