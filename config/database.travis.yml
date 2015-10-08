@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
-  database: library-dev
+  database: <%= ENV['DB_DATABASE'] %>
   host: <%= ENV['DB_HOST'] %>
   port: 5432
   username: <%= ENV['DB_USER'] %>
@@ -8,7 +8,7 @@ development:
 
 test:
   adapter: postgresql
-  database: library-test
+  database: <%= ENV['DB_DATABASE'] %>
   host: <%= ENV['DB_HOST'] %>
   port: 5432
   username: <%= ENV['DB_USER'] %>
