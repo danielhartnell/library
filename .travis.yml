@@ -1,6 +1,8 @@
 language: ruby
 rvm:
   - 2.0.0
+script:
+  - cp config/database.travis.yml config/database.yml
 deploy:
   provider: heroku
   api_key:
