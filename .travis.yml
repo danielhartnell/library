@@ -11,3 +11,10 @@ before_script:
   - cp config/database.travis.yml config/database.yml
 after_script:
   - rm config/database.yml
+deploy:
+  provider: heroku
+  api_key:
+    secure: rgPwziUoD0fCD7Ck96nWPXuJISzRQga92iiqho1YJY0So6VR5xvBi8y6I+tdcMkzKUXBmo5iTIk/7seGqQy5woRdLp7fu9p0ciI+kBr1C+ov4zavE6J8rZsoHoUk/X4ZcsRTpIQHsmFhwXsefgOJf/dBGadBqE1LKT9STYJGDXBPycS3ad5nd2BjmMD+6LlBe/7Zn4S3UjRizaZ26Y4X9PK0Pc2Dt5ZdLMAyESKpOdkM65GdZcNbPdcctDIX6EvYFLErBNoPNuF/a2BJcqDBpzsq6p5eCrT6bKLMojHk7K6n15JmdRPAzoUZtqmONF9zGlsAZKbBszzsbH1fdAQXw+JNo3oGihPTtm14ll/tBP/TyBLAfCeU9PwMMezZ/IlVZuRQ00StfBrdJRKXiFyg6CXb3IHfvB1vW2D0/yhaikVmbx9t2WC8sNUgy427dyiOgH50Qoc6ZyCpXMG4UQbyMSwNbw14uAnPFAVyach05tJfczoMxmiTn3vpLKNTz4Ve7fFJhceYp3zIjE+WETB8I6q5RS+815eRGC/kGzC3l1DslCYR/JA1N3CJouezLrCfGHrhF2Xs8DJCNOrxmxHT1ACVAHIXESxgvq9spRY5PKhUXXEPDsW2KS0305yYHZhIhVUZPTuz1oaib5q3j0A78akqauF96DBAM3XznnESaHk=
+  app:
+    master: dhartnell-library
+    staging: dhartnell-library-staging
