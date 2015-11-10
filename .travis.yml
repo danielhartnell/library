@@ -1,16 +1,6 @@
 language: ruby
 rvm:
   - 2.0.0
-env:
-  - DB=postgresql
-script:
-  - RAILS_ENV=production bundle exec rake db:create:all
-  - bundle exec rake db:migrate
-  - bundle exec rake db:seed
-before_script:
-  - cp config/database.travis.yml config/database.yml
-after_script:
-  - rm config/database.yml
 deploy:
   provider: heroku
   api_key:
