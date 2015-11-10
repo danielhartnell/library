@@ -4,4 +4,4 @@ test:
   host: <%= ENV['DB_HOST'] %>
   port: 5432
   username: <%= ENV['DB_USER'] %>
-  password: <%= ENV['DB_PASS'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
