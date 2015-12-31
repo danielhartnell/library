@@ -30,3 +30,7 @@ This should get you up and running! The following screenshot includes sample dat
 - I may transition from jQuery to pure Javascript to eliminate an unnecessary layer of abstraction. 
 - Currently opacity on hover is done with jQuery. My buddy Seth has recommended pure CSS for faster results.
 - Can I show if the app is currently running under Heroku?
+
+### Ideas
+
+We should migrate to Ember JS to the front-end. It would be a great learning experience and may help to improve the look of the site.
